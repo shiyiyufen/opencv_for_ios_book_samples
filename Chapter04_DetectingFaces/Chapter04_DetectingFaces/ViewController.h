@@ -19,5 +19,6 @@
 }
 
 @property (nonatomic, weak) IBOutlet UIImageView* imageView;
+- (IBAction)refrashIt:(id)sender;
 
 @end

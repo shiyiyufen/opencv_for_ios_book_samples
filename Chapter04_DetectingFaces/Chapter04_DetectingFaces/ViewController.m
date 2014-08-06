@@ -20,7 +20,7 @@
 @end
 
 @implementation ViewController
-
+static int kImageIndex = 0;
 @synthesize imageView;
 
 - (void)viewDidLoad
@@ -33,8 +33,20 @@
                               ofType:@"xml"];
     faceDetector.load([cascadePath UTF8String]);
     
+    
+    [self faceDetector];
+}
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+- (void)faceDetector
+{
     //Load image with face
-    UIImage* image = [UIImage imageNamed:@"lena.png"];
+    UIImage* image = [UIImage imageNamed:[NSString stringWithFormat:@"%d.png",(kImageIndex++ % 3) + 1]];
     cv::Mat faceImage;
     UIImageToMat(image, faceImage);
     
@@ -45,7 +57,7 @@
     // Detect faces
     std::vector<cv::Rect> faces;
     faceDetector.detectMultiScale(gray, faces, 1.1,
-                                 2, 0|CV_HAAR_SCALE_IMAGE, cv::Size(30, 30));
+                                  2, 0|CV_HAAR_SCALE_IMAGE, cv::Size(30, 30));
     
     // Draw all detected faces
     for(unsigned int i = 0; i < faces.size(); i++)
@@ -64,10 +76,8 @@
     imageView.image = MatToUIImage(faceImage);
 }
 
-- (void)didReceiveMemoryWarning
+- (IBAction)refrashIt:(id)sender
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    [self faceDetector];
 }
-
 @end

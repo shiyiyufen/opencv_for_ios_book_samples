@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		460B7674198B8F2A0049E180 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 460B7671198B8F2A0049E180 /* 1.png */; };
+		460B7675198B8F2A0049E180 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 460B7672198B8F2A0049E180 /* 3.png */; };
+		460B7676198B8F2A0049E180 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 460B7673198B8F2A0049E180 /* 2.png */; };
 		8360CD9617366B6100A0F806 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8360CD9517366B6100A0F806 /* UIKit.framework */; };
 		8360CD9817366B6100A0F806 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8360CD9717366B6100A0F806 /* Foundation.framework */; };
 		8360CD9A17366B6100A0F806 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8360CD9917366B6100A0F806 /* CoreGraphics.framework */; };
@@ -20,11 +23,13 @@
 		8360CDB217366B6100A0F806 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8360CDB017366B6100A0F806 /* MainStoryboard_iPad.storyboard */; };
 		8360CDB517366B6100A0F806 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8360CDB417366B6100A0F806 /* ViewController.m */; };
 		8360CDBC17366B7400A0F806 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8360CDBB17366B7400A0F806 /* opencv2.framework */; };
-		8360CDBE17366D3600A0F806 /* lena.png in Resources */ = {isa = PBXBuildFile; fileRef = 8360CDBD17366D3600A0F806 /* lena.png */; };
 		8360CDC017366D4A00A0F806 /* haarcascade_frontalface_alt.xml in Resources */ = {isa = PBXBuildFile; fileRef = 8360CDBF17366D4A00A0F806 /* haarcascade_frontalface_alt.xml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		460B7671198B8F2A0049E180 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		460B7672198B8F2A0049E180 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		460B7673198B8F2A0049E180 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
 		8360CD9117366B6100A0F806 /* Chapter04_DetectingFaces.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chapter04_DetectingFaces.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8360CD9517366B6100A0F806 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8360CD9717366B6100A0F806 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -43,7 +48,6 @@
 		8360CDB317366B6100A0F806 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		8360CDB417366B6100A0F806 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8360CDBB17366B7400A0F806 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../opencv2.framework; sourceTree = "<group>"; };
-		8360CDBD17366D3600A0F806 /* lena.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lena.png; sourceTree = "<group>"; };
 		8360CDBF17366D4A00A0F806 /* haarcascade_frontalface_alt.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,8 +111,10 @@
 		8360CD9C17366B6100A0F806 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				460B7671198B8F2A0049E180 /* 1.png */,
+				460B7672198B8F2A0049E180 /* 3.png */,
+				460B7673198B8F2A0049E180 /* 2.png */,
 				8360CDBF17366D4A00A0F806 /* haarcascade_frontalface_alt.xml */,
-				8360CDBD17366D3600A0F806 /* lena.png */,
 				8360CD9D17366B6100A0F806 /* Chapter04_DetectingFaces-Info.plist */,
 				8360CD9E17366B6100A0F806 /* InfoPlist.strings */,
 				8360CDA117366B6100A0F806 /* main.m */,
@@ -171,13 +177,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				460B7676198B8F2A0049E180 /* 2.png in Resources */,
+				460B7674198B8F2A0049E180 /* 1.png in Resources */,
 				8360CDA017366B6100A0F806 /* InfoPlist.strings in Resources */,
 				8360CDA817366B6100A0F806 /* Default.png in Resources */,
 				8360CDAA17366B6100A0F806 /* Default@2x.png in Resources */,
 				8360CDAC17366B6100A0F806 /* Default-568h@2x.png in Resources */,
+				460B7675198B8F2A0049E180 /* 3.png in Resources */,
 				8360CDAF17366B6100A0F806 /* MainStoryboard_iPhone.storyboard in Resources */,
 				8360CDB217366B6100A0F806 /* MainStoryboard_iPad.storyboard in Resources */,
-				8360CDBE17366D3600A0F806 /* lena.png in Resources */,
 				8360CDC017366D4A00A0F806 /* haarcascade_frontalface_alt.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,6 +336,7 @@
 				8360CDBA17366B6100A0F806 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
