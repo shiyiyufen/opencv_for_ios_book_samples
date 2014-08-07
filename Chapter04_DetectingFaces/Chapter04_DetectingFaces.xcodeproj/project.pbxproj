@@ -10,6 +10,10 @@
 		460B7674198B8F2A0049E180 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 460B7671198B8F2A0049E180 /* 1.png */; };
 		460B7675198B8F2A0049E180 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 460B7672198B8F2A0049E180 /* 3.png */; };
 		460B7676198B8F2A0049E180 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 460B7673198B8F2A0049E180 /* 2.png */; };
+		46D182BB19931DDB00081864 /* Utility.mm in Sources */ = {isa = PBXBuildFile; fileRef = 46D182BA19931DDB00081864 /* Utility.mm */; };
+		46D182BF1993215400081864 /* 1-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 46D182BC1993215400081864 /* 1-1.png */; };
+		46D182C01993215400081864 /* 2-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 46D182BD1993215400081864 /* 2-2.png */; };
+		46D182C11993215400081864 /* 3-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 46D182BE1993215400081864 /* 3-3.png */; };
 		8360CD9617366B6100A0F806 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8360CD9517366B6100A0F806 /* UIKit.framework */; };
 		8360CD9817366B6100A0F806 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8360CD9717366B6100A0F806 /* Foundation.framework */; };
 		8360CD9A17366B6100A0F806 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8360CD9917366B6100A0F806 /* CoreGraphics.framework */; };
@@ -30,6 +34,11 @@
 		460B7671198B8F2A0049E180 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		460B7672198B8F2A0049E180 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
 		460B7673198B8F2A0049E180 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		46D182B919931DDB00081864 /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
+		46D182BA19931DDB00081864 /* Utility.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Utility.mm; sourceTree = "<group>"; };
+		46D182BC1993215400081864 /* 1-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1-1.png"; sourceTree = "<group>"; };
+		46D182BD1993215400081864 /* 2-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2-2.png"; sourceTree = "<group>"; };
+		46D182BE1993215400081864 /* 3-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "3-3.png"; sourceTree = "<group>"; };
 		8360CD9117366B6100A0F806 /* Chapter04_DetectingFaces.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chapter04_DetectingFaces.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8360CD9517366B6100A0F806 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8360CD9717366B6100A0F806 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -97,6 +106,8 @@
 		8360CD9B17366B6100A0F806 /* Chapter04_DetectingFaces */ = {
 			isa = PBXGroup;
 			children = (
+				46D182B919931DDB00081864 /* Utility.h */,
+				46D182BA19931DDB00081864 /* Utility.mm */,
 				8360CDA417366B6100A0F806 /* AppDelegate.h */,
 				8360CDA517366B6100A0F806 /* AppDelegate.m */,
 				8360CDAD17366B6100A0F806 /* MainStoryboard_iPhone.storyboard */,
@@ -112,6 +123,9 @@
 			isa = PBXGroup;
 			children = (
 				460B7671198B8F2A0049E180 /* 1.png */,
+				46D182BC1993215400081864 /* 1-1.png */,
+				46D182BD1993215400081864 /* 2-2.png */,
+				46D182BE1993215400081864 /* 3-3.png */,
 				460B7672198B8F2A0049E180 /* 3.png */,
 				460B7673198B8F2A0049E180 /* 2.png */,
 				8360CDBF17366D4A00A0F806 /* haarcascade_frontalface_alt.xml */,
@@ -180,10 +194,13 @@
 				460B7676198B8F2A0049E180 /* 2.png in Resources */,
 				460B7674198B8F2A0049E180 /* 1.png in Resources */,
 				8360CDA017366B6100A0F806 /* InfoPlist.strings in Resources */,
+				46D182C01993215400081864 /* 2-2.png in Resources */,
 				8360CDA817366B6100A0F806 /* Default.png in Resources */,
 				8360CDAA17366B6100A0F806 /* Default@2x.png in Resources */,
 				8360CDAC17366B6100A0F806 /* Default-568h@2x.png in Resources */,
 				460B7675198B8F2A0049E180 /* 3.png in Resources */,
+				46D182BF1993215400081864 /* 1-1.png in Resources */,
+				46D182C11993215400081864 /* 3-3.png in Resources */,
 				8360CDAF17366B6100A0F806 /* MainStoryboard_iPhone.storyboard in Resources */,
 				8360CDB217366B6100A0F806 /* MainStoryboard_iPad.storyboard in Resources */,
 				8360CDC017366D4A00A0F806 /* haarcascade_frontalface_alt.xml in Resources */,
@@ -199,6 +216,7 @@
 			files = (
 				8360CDA217366B6100A0F806 /* main.m in Sources */,
 				8360CDA617366B6100A0F806 /* AppDelegate.m in Sources */,
+				46D182BB19931DDB00081864 /* Utility.mm in Sources */,
 				8360CDB517366B6100A0F806 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

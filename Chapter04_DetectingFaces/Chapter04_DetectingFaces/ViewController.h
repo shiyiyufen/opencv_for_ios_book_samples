@@ -19,6 +19,9 @@
 }
 
 @property (nonatomic, weak) IBOutlet UIImageView* imageView;
+@property (weak, nonatomic) IBOutlet UIImageView *avatarImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *targetImageView;
+
 - (IBAction)refrashIt:(id)sender;
 
 @end
